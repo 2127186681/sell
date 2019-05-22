@@ -1,0 +1,48 @@
+spring:
+  datasource: #���ݿ�����
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.45/sell?characterEncoding=utf-8&useSSL=false
+#jpa����
+  jpa:
+    show-sql: true
+  jackson:
+      default-property-inclusion: non_null
+  redis:
+    host: 192.168.1.45
+    port: 6379
+server:
+    context-path: /sell
+
+
+wechat:
+  mpAppId: wx2e337d5ca4237d8b
+  mpAppSecret: 8d1f9980e1ac84ea02a12ad18daf6fac
+  openAppId: 546165416511654
+  openAppSecret: 54984987981984
+  mchId: 14091461231
+  mchKey: 165465165465
+  keyPath: 21654645195
+  notifyUrl: http://lysell.natapp1.cc/sell/pay/notify
+  templateId:
+    orderStatus: O0ts3WpH8CowLZnPvPWJzuhLiV6l21V_Sm1mljkbLqM
+projectUrl:
+  wxChatMpAuthroize: http://lysell.natapp1.cc
+  wxChatOpenAuthroize: http://lysell.natapp1.cc
+  sell: http://lysell.natapp1.cc
+
+
+      #����url��ַǰ׺
+#��־����
+#logging:
+    # pattern:
+    # console: "%d - %msg%n"
+#  path: C:/dosh ��־���·��
+  #file: C:/dosh/sell.log    #��־���·�����Զ����ļ���  #Ĭ����־����
+    # level:
+      # com:
+    # imooc: debug   #������־Ĭ�ϼ���ָ��ĳ����������
+logging:
+                             level:
+                               com.imooc.pojo.mapper: trace
